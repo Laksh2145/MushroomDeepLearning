@@ -192,8 +192,8 @@ training_loss = history.history['loss']
 test_loss = history.history['val_loss']
 
 # Get training and test accuracy history.
-training_acc = history.history['acc']
-test_acc = history.history['val_acc']
+# training_acc = history.history['acc']
+# test_acc = history.history['val_acc']
 
 # Create count of the number of epochs
 epoch_count = range(1, len(training_loss) + 1)
@@ -207,9 +207,9 @@ plt.ylabel('Loss')
 plt.show()
 
 # Visualize acc history
-plt.plot(epoch_count, training_acc, 'r--')
-plt.plot(epoch_count, test_acc, 'b-')
-plt.legend(['Training Acc', 'Test Acc'])
-plt.xlabel('Epoch')
-plt.ylabel('Acc')
-plt.show()
+# plt.plot(epoch_count, training_acc, 'r--')
+# plt.plot(epoch_count, test_acc, 'b-')
+# plt.legend(['Training Acc', 'Test Acc'])
+# plt.xlabel('Epoch')
+# plt.ylabel('Acc')
+# plt.show()
